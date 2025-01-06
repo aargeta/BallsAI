@@ -1,0 +1,43 @@
+INFO:root:Authentication successful at 2025-01-05 18:37:43.432805.
+INFO:root:Rate limit status at 2025-01-05 18:37:43.574306: {'/statuses/retweeters/ids': {'limit': 75, 'remaining': 75, 'reset': 1736121167}, '/statuses/retweets_of_me': {'limit': 75, 'remaining': 75, 'reset': 1736121167}, '/statuses/home_timeline': {'limit': 15, 'remaining': 15, 'reset': 1736121167}, '/statuses/show/:id': {'limit': 900, 'remaining': 900, 'reset': 1736121167}, '/statuses/user_timeline': {'limit': 900, 'remaining': 900, 'reset': 1736121167}, '/statuses/friends': {'limit': 15, 'remaining': 15, 'reset': 1736121167}, '/statuses/retweets/:id': {'limit': 75, 'remaining': 75, 'reset': 1736121167}, '/statuses/mentions_timeline': {'limit': 75, 'remaining': 75, 'reset': 1736121167}, '/statuses/oembed': {'limit': 180, 'remaining': 180, 'reset': 1736121167}, '/statuses/lookup': {'limit': 900, 'remaining': 900, 'reset': 1736121167}}
+INFO:root:Authentication successful at 2025-01-05 18:41:52.718081.
+INFO:root:Rate limit status at 2025-01-05 18:41:52.895959: {'/statuses/retweeters/ids': {'limit': 75, 'remaining': 75, 'reset': 1736121416}, '/statuses/retweets_of_me': {'limit': 75, 'remaining': 75, 'reset': 1736121416}, '/statuses/home_timeline': {'limit': 15, 'remaining': 15, 'reset': 1736121416}, '/statuses/show/:id': {'limit': 900, 'remaining': 900, 'reset': 1736121416}, '/statuses/user_timeline': {'limit': 900, 'remaining': 900, 'reset': 1736121416}, '/statuses/friends': {'limit': 15, 'remaining': 15, 'reset': 1736121416}, '/statuses/retweets/:id': {'limit': 75, 'remaining': 75, 'reset': 1736121416}, '/statuses/mentions_timeline': {'limit': 75, 'remaining': 75, 'reset': 1736121416}, '/statuses/oembed': {'limit': 180, 'remaining': 180, 'reset': 1736121416}, '/statuses/lookup': {'limit': 900, 'remaining': 900, 'reset': 1736121416}}
+INFO:root:Authentication successful at 2025-01-05 18:43:39.329585.
+INFO:root:Rate limit status at 2025-01-05 18:43:39.464405: {'/statuses/retweeters/ids': {'limit': 75, 'remaining': 75, 'reset': 1736121522}, '/statuses/retweets_of_me': {'limit': 75, 'remaining': 75, 'reset': 1736121522}, '/statuses/home_timeline': {'limit': 15, 'remaining': 15, 'reset': 1736121522}, '/statuses/show/:id': {'limit': 900, 'remaining': 900, 'reset': 1736121522}, '/statuses/user_timeline': {'limit': 900, 'remaining': 900, 'reset': 1736121522}, '/statuses/friends': {'limit': 15, 'remaining': 15, 'reset': 1736121522}, '/statuses/retweets/:id': {'limit': 75, 'remaining': 75, 'reset': 1736121522}, '/statuses/mentions_timeline': {'limit': 75, 'remaining': 75, 'reset': 1736121522}, '/statuses/oembed': {'limit': 180, 'remaining': 180, 'reset': 1736121522}, '/statuses/lookup': {'limit': 900, 'remaining': 900, 'reset': 1736121522}}
+INFO:root:Authentication successful at 2025-01-05 18:43:52.399228.
+INFO:root:Manual post successful at 2025-01-05 18:43:52.656069. Response: {'id': '1876052038590558523', 'edit_history_tweet_ids': ['1876052038590558523'], 'text': 'Testing BallsAI bot manual posting! \U0001f95c\U0001f916'}
+INFO:root:BallsAI Bot started at 2025-01-05 18:43:52.657085.
+INFO:root:BallsAI Bot started at 2025-01-05 18:54:49.023053.
+INFO:root:BallsAI Bot started at 2025-01-05 18:58:01.958456.
+INFO:root:BallsAI Bot started at 2025-01-05 19:10:25.853386.
+INFO:root:BallsAI Bot started at 2025-01-05 19:17:21.985826.
+INFO:root:BallsAI Bot started at 2025-01-05 19:19:05.040288.
+ERROR:root:Failed to generate AI content: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+INFO:root:Posted tweet at 2025-01-05 19:19:10.136807: {'edit_history_tweet_ids': ['1876060920243274105'], 'id': '1876060920243274105', 'text': 'BallsAI is experiencing a brain fart. \U0001f95c\U0001f4a8'}
+ERROR:root:Failed to log post: 'charmap' codec can't encode characters in position 108-109: character maps to <undefined>
+INFO:root:BallsAI Bot started at 2025-01-05 19:22:03.063854.
+INFO:openai:error_code=model_not_found error_message='The model `gpt-4` does not exist or you do not have access to it.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+ERROR:root:Failed to generate AI content: The model `gpt-4` does not exist or you do not have access to it.
+ERROR:root:Failed to post tweet: 403 Forbidden
+You are not allowed to create a Tweet with duplicate content.
+INFO:root:BallsAI Bot started at 2025-01-05 19:29:35.956599.
+INFO:openai:error_code=model_not_found error_message='The model `gpt-4` does not exist or you do not have access to it.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+ERROR:root:GPT-4 failed, falling back to GPT-3.5-turbo: The model `gpt-4` does not exist or you do not have access to it.
+INFO:openai:error_code=insufficient_quota error_message='You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.' error_param=None error_type=insufficient_quota message='OpenAI API error received' stream_error=False
+ERROR:root:Failed to generate AI content with GPT-3.5-turbo: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+INFO:root:Posted tweet at 2025-01-05 19:29:42.212394: {'edit_history_tweet_ids': ['1876063571429175795'], 'text': 'BallsAI is experiencing a brain fart. \U0001f95c\U0001f4a8 \U0001f95c#4594', 'id': '1876063571429175795'}
+INFO:root:BallsAI Bot started at 2025-01-05 20:35:42.870636.
+INFO:openai:error_code=model_not_found error_message='The model `gpt-4` does not exist or you do not have access to it.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+ERROR:root:GPT-4 failed, falling back to GPT-3.5-turbo: The model `gpt-4` does not exist or you do not have access to it.
+INFO:openai:error_code=insufficient_quota error_message='You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.' error_param=None error_type=insufficient_quota message='OpenAI API error received' stream_error=False
+ERROR:root:Failed to generate AI content with GPT-3.5-turbo: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+INFO:root:Posted tweet at 2025-01-05 20:35:47.604837: {'edit_history_tweet_ids': ['1876080203937534100'], 'text': 'BallsAI is experiencing a brain fart. \U0001f95c\U0001f4a8 \U0001f95c#9465', 'id': '1876080203937534100'}
