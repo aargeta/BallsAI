@@ -14,10 +14,10 @@ BallsAI is a humorous and sarcastic AI-powered Twitter bot designed to engage wi
 
 2. **Rate Limit Management**:
    - Includes rate limit checks to avoid hitting Twitter’s API limits.
-   - Implements an exponential backoff strategy when rate limits are exceeded (waits 15 minutes before retrying).
+   - Displays the next available action time when rate limits are reached.
 
-3. **Countdown Timer**:
-   - Displays a live countdown to the next action in the terminal.
+3. **Timer and Input Separation**:
+   - Displays a live countdown to the next action in the terminal without overlapping with manual input prompts.
 
 4. **Manual Push Commands**:
    - Trigger tweets or replies manually from the terminal.
@@ -75,24 +75,25 @@ BallsAI is a humorous and sarcastic AI-powered Twitter bot designed to engage wi
 
 2. **Rate Limit Handling**:
    - Checks the remaining API requests before performing an action.
-   - Skips actions if rate limits are exceeded and waits 15 minutes before retrying.
+   - Displays the next available action time when limits are reached.
 
 3. **Manual Commands**:
    - The bot listens for manual commands in the terminal:
      - `tweet`: Posts a standalone tweet.
      - `reply_target`: Replies to a tweet from the target account.
+     - `check_rate`: Displays the current rate limit status.
 
 4. **Target Account Focus**:
-   - The bot can be configured to focus on a single target account by updating the `TARGET_ACCOUNT` variable in the script.
+   - The bot dynamically extracts the username from a provided URL and focuses on that account.
 
 ---
 
 ### **Customizing the Bot**
 
 1. **Change Target Account**:
-   - Update the `TARGET_ACCOUNT` variable in the script:
+   - Update the `TARGET_ACCOUNT_URL` variable in the script:
      ```python
-     TARGET_ACCOUNT = "YourTargetAccount"
+     TARGET_ACCOUNT_URL = "https://x.com/YourTargetAccount"
      ```
 
 2. **Adjust Action Frequency**:
